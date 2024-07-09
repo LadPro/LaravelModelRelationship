@@ -11,7 +11,7 @@ class Role extends Model
     use HasFactory;
     protected $guarded = [];
 
-    public function users():BelongsToMany
+    public function user():BelongsToMany
     {
         return $this->belongsToMany(User::class)->withPivot('added_by');
         
