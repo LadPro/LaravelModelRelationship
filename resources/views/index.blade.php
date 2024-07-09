@@ -13,10 +13,11 @@
             <h2>{{ $user->email }}</h2>
             @forelse($user->phone as $phon)
             <h3>+{{$phon->prefix}}-{{$phon->number}}</h3>
-
+            
             @empty
-                <h3>No phone</h3>
+            <h3>No phone</h3>
             @endforelse
+            <h3>Role: {{$user->role[0]->name}}</h3>
         </div>
 
     @empty
