@@ -18,6 +18,8 @@
             <h3>No phone</h3>
             @endforelse
             <h3>Role: {{$user->role[0]->name}}</h3>
+            
+            <h3>sim company: {{$user->phoneSim}}</h3>
         </div>
 
     @empty
